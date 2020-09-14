@@ -1,2 +1,2 @@
 include ':app'
-rootProject.name = "Java_Protection_App"
+rootProject.name = "An App"

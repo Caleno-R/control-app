@@ -1,0 +1,11 @@
+<resources>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="app_name">An App</string>
+    <string name="jacinta">Jacinta</string>
+    <string name="nikita">Nikita</string>
+    <string name="children">Children</string>
+    <string name="parent">Parents</string>
+    <string name="account">Account</string>
+    <string name="help">Help</string>
+</resources>
