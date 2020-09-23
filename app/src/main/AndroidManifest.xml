@@ -11,8 +11,10 @@
         android:theme="@style/AppTheme">
         <activity android:name=".ChildLocationActivity"></activity>
         <activity android:name=".BedBlockerActivity" />
-        <activity android:name=".AppBlockerActivity" />
-        <activity android:name=".UsageLimitActivity" />
+        <activity android:name=".AppBlockerActivity"
+            android:label="Block Apps"/>
+        <activity android:name=".UsageLimitActivity"
+            android:label="Daily usage limit"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

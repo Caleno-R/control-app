@@ -1,6 +1,9 @@
 package com.example.anapp;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.ActionMenuView;
+import androidx.appcompat.widget.Toolbar;
 
 import android.os.Bundle;
 
@@ -10,5 +13,7 @@ public class UsageLimitActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_usage_limit);
+        Toolbar myToolbar = (Toolbar) findViewById(R.id.toolbarULA);
+        setSupportActionBar(myToolbar);
     }
 }
