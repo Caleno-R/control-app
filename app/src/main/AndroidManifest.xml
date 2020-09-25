@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ChildLocationActivity"></activity>
+        <activity
+            android:name=".ChildLocationActivity"
+            android:label="Check Children's Location" />
         <activity android:name=".BedBlockerActivity" />
         <activity android:name=".AppBlockerActivity"
             android:label="Block Apps"/>

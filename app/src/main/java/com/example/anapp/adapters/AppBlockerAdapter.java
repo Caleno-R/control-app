@@ -3,8 +3,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -36,12 +39,14 @@ public class AppBlockerAdapter extends FirestoreRecyclerAdapter<AppInfo,AppBlock
     class AppHolder extends RecyclerView.ViewHolder{
         TextView tvAppname;
         ImageView ivApp;
+        CheckBox cbAppBlocker;
 
 
         public AppHolder(@NonNull View itemView) {
             super(itemView);
             tvAppname=itemView.findViewById(R.id.tvAppName);
             ivApp=itemView.findViewById(R.id.ivApp);
+            cbAppBlocker=itemView.findViewById(R.id.checkbox_AB);
 
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -49,6 +54,16 @@ public class AppBlockerAdapter extends FirestoreRecyclerAdapter<AppInfo,AppBlock
                     int position=getAdapterPosition();
                     if(position !=RecyclerView.NO_POSITION && listener!=null){
                         listener.onItemClick(getSnapshots().getSnapshot(position),position);
+
+                    }
+                }
+            });
+            cbAppBlocker.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+                @Override
+                public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                    if (b){
+
+                    }else {
 
                     }
                 }
