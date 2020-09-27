@@ -9,14 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".AppLogActivity"
+            android:label="App Log" ></activity>
         <activity
             android:name=".ChildLocationActivity"
-            android:label="Check Children's Location" />
+            android:label="@string/check_child_location" />
         <activity android:name=".BedBlockerActivity" />
-        <activity android:name=".AppBlockerActivity"
-            android:label="Block Apps"/>
-        <activity android:name=".UsageLimitActivity"
-            android:label="Daily usage limit"/>
+        <activity
+            android:name=".AppBlockerActivity"
+            android:label="Block Apps" />
+        <activity
+            android:name=".UsageLimitActivity"
+            android:label="Daily usage limit" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

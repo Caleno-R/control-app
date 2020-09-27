@@ -13,6 +13,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 
 import com.google.android.material.navigation.NavigationView;
 
@@ -23,6 +24,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private DrawerLayout drawerLayout;
     private NavigationView navigationView;
     private LinearLayout layoutLimit,layoutAppBlocker,layoutLocation,layoutBedBlocker;
+    private RelativeLayout layoutAppLog;
 
 
 
@@ -37,6 +39,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         layoutAppBlocker=findViewById(R.id.layout_appBlocker);
         layoutLocation=findViewById(R.id.layout_childLocation);
         layoutBedBlocker=findViewById(R.id.layout_bedBlocker);
+        layoutAppLog=findViewById(R.id.layout_appLog);
         layoutLimit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -62,6 +65,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             @Override
             public void onClick(View view) {
                 Intent i=new Intent(MainActivity.this,ChildLocationActivity.class);
+                startActivity(i);
+            }
+        });
+        layoutAppLog.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i=new Intent(MainActivity.this,AppLogActivity.class);
                 startActivity(i);
             }
         });

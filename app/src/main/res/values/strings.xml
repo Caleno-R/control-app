@@ -8,4 +8,5 @@
     <string name="parent">Parents</string>
     <string name="account">Account</string>
     <string name="help">Help</string>
+    <string name="check_child_location">Check Children\'s Location</string>
 </resources>
